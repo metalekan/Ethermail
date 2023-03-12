@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+img, video, picture {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    z-index: 1;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo img{
+    width: 4rem;
+}
+
+.logo{
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo h1{
+    letter-spacing: 8px;
+}
+
+.item_list{
+    flex-basis: 60%;
+}
+
+ul{
+    list-style: none;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+
+.navigation a{
+    display: block;
+    color: #000;
+    font-weight: 600;
+}
+
+.navigation a:hover{
+    color: #2563eb;
+}
+
+.bars{
+    display: inline-block;
+    position: absolute;
+    width: 1.25rem;
+    height: 3px;
+    right: 2rem;
+    top: 1.5rem;
+    background: hsl(224.44,64.29%,32.94%);
+}
+
+.bars::after, .bars::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 1.25rem;
+    height: 3px;
+    background: hsl(224.44,64.29%,32.94%);
+}
+
+.bars::before{
+    top: 7px;
+}
+
+.bars::after{
+    top: 14px;
+}
+
+.toggle{
+    display: none;
+}
+
+.navigation li{
+    display: inline;
+}
+
+.alpha{
+    display: flex;
+    padding: 6rem;
+    align-items: center;
+    color: #fff;
+    background: hsl(224.44,64.29%,32.94%);
+}
+
+.alpha_child_one{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.alpha h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.change{
+    color: #2563eb;
+}
+
+.alpha h2{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.alpha p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.btn{
+    width: fit-content;
+    padding: 1rem;
+    border: none;
+    border-radius: 9px;
+    background: hsl(221.21,83.19%,53.33%);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    transition: all 200ms ease-out;
+    background: hsl(221, 98%, 48%);
+}
+
+.beta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(224.44,64.29%,32.94%);
+    color: #dcd5d5;
+    padding: 6rem;
+}
+
+.beta img{
+    width: 200px;
+}
+
+.gamma{
+    padding: 6rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.gamma_child{
+    display: grid;
+    grid: 1fr 1fr / repeat(3, 1fr);
+    gap: 2rem 3rem;
+}
+
+.gamma_child_card{
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: hsl(220,14.29%,95.88%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.gamma_child_card:hover, .epsilon_child_card:hover, .eta_child_card:hover, .theta_child_card:hover{
+    transform: scale(1.05);
+    transition: all 100ms ease-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.gamma h2, .epsilon h2, .eta h2, .theta h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.gamma p, .epsilon p, .eta p, .theta p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.gamma_child_card p{
+    font-size: 1rem;
+}
+
+.delta{
+    display: flex;
+    background: hsl(224.44,64.29%,32.94%);
+    padding: 6rem;
+    color: #fff;
+}
+
+.delta_child_one h2{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.delta_child_two p{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.epsilon{
+    padding: 6rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.epsilon button, .eta button, .theta button {
+    margin: 0 auto;
+}
+
+.epsilon_child{
+    display: grid;
+    grid: 1fr 1fr / repeat(2, 1fr);
+    gap: 2rem 2rem;
+}
+
+.epsilon_child_card{
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: hsl(220,14.29%,95.88%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.zeta{
+    display: grid;
+    gap: 2rem;
+    background: hsl(224.44,64.29%,32.94%);
+    padding: 4rem;
+}
+
+.zeta h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.zeta_child{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.zeta_child img{
+    width: 100px;
+}
+
+.eta{
+    display: grid;
+    gap: 2rem;
+    padding: 6rem;
+}
+
+.eta_child{
+    display: grid;
+    grid: auto / 1fr 1fr;
+    gap: 2rem;
+}
+
+.eta_child_one{
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr;
+    gap: 2rem 2rem;
+}
+
+.eta_child_card{
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: hsl(220,14.29%,95.88%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.theta{
+    padding: 6rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.theta_child{
+    display: grid;
+    grid: 1fr 1fr / repeat(2, 1fr);
+    gap: 2rem 2rem;
+}
+
+.theta_child_card{
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: hsl(220,14.29%,95.88%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.iota{
+    padding: 6rem;
+    display: grid;
+    gap: 2rem;
+    background: hsl(220.91,39.29%,10.98%);
+    color: #e5e7eb;
+}
+
+.footer_link a{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #e5e7eb;
+}
+
+.footer_link a:hover{
+    color: #fff;
+}
+
+.footer_link h4{
+    color: #9ca3af;
+}
+
+.footer_link li{
+    display: flex;
+}
+
+.footer_links_one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_links_two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_icon_links_one{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer_icon_links_two{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+
+.navbar{
+    padding: .5rem;
+    flex-direction: column;
+    align-items: start;
+}
+
+.navigation{
+    display: none;
+    padding-top: 1rem;
+    flex-direction: column;
+}
+
+.navigation.active{
+    display: flex;
+}
+
+.navigation li{
+    width: 90vw;
+}
+
+.toggle{
+    display: flex;
+}
+
+.gamma_child_card:hover, .epsilon_child_card:hover, .eta_child_card:hover, .theta_child_card:hover{
+    transition: none;
+    transform: none;
+}
+
+.btn:hover{
+    transform: none;
+}
+
+.alpha{
+    text-align: center;
+    padding: 1rem;
+}
+
+.alpha h1{
+    font-size: 3rem;
+}
+
+.alpha button{
+    margin: 0 auto;
+}
+
+.beta, .gamma, .epsilon, .eta, .theta, .iota{
+    padding: 1rem;
+}
+
+
+.alpha, .beta, .gamma_child, .delta, .epsilon_child, .eta_child, .eta_child_one, .theta_child, .footer_links_two, .footer_icon_links_one{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer_icon_links_two{
+    justify-content: center;
+}
+
+
+}
